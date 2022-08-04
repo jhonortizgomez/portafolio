@@ -1,0 +1,111 @@
+@import "../../styles/vars.scss";
+@import "../../styles/animations.scss";
+
+.Header {
+  background-color: $color-primary;
+  opacity: 1;
+  min-width: 25rem;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  flex-direction: column;
+  z-index: 1;
+
+  &-photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    &__img {
+      width: 15rem;
+      height: 15rem;
+      border-radius: 50%;
+      border: 0.1rem solid $color-secundary;
+      margin: 1.5rem auto;
+      box-shadow: rgba($color-secundary, 0.35) 0px 5px 15px;
+    }
+    &__title {
+      color: $color-secundary;
+      text-align: center;
+      & h1 {
+        font-size: $font-large;
+      }
+      & h2 {
+        font-size: $font-middle;
+        font-weight: 100;
+      }
+    }
+  }
+  &-list {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & ul {
+      margin: 1.5rem auto;
+      & li {
+        text-decoration: none;
+        width: 15rem;
+        font-size: $font-middle;
+        margin: 2rem 0;
+        font-weight: 100;
+        cursor: pointer;
+        padding: 1rem;
+        border-bottom: 0.1rem solid $color-secundary;
+        color: white;
+      }
+      & li:hover {
+        border: 0.1rem solid $color-secundary;
+        border-radius: 1rem;
+        transform: scale(1.1);
+        background-color: rgba(255, 255, 255, 0);
+        opacity: 0.6;
+        color: white;
+      }
+    }
+    &__button {
+      display: none;
+      & span {
+        font-size: 2rem;
+        margin: 1rem 2rem;
+      }
+    }
+  }
+  &-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & img {
+      width: 7rem;
+      height: 7rem;
+      border-radius: 5rem;
+      box-shadow: rgba($color-secundary, 0.35) 0px 5px 15px;
+      margin-bottom: 2rem;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .Header {
+    display: none;
+    @include fadeIn;
+    &-photo {
+      &__img {
+        width: 11rem;
+        height: 11rem;
+      }
+    }
+    &-list ul li {
+      font-size: 1.5rem;
+      margin: 0.5rem 0;
+    }
+  }
+  .on {
+    display: flex;
+  }
+}

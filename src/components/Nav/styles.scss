@@ -1,0 +1,62 @@
+@import "../../styles/vars.scss";
+@import "../../styles/animations.scss";
+
+.Nav {
+  box-shadow: rgba($color-secundary, 0.25) 0px 5px 15px;
+  border-radius: 1.5rem;
+  margin: 2rem 2rem;
+  height: 6rem;
+  display: flex;
+
+  &-left {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 4rem;
+    & h1 {
+      font-size: 4rem;
+      color: white;
+      font-weight: 800;
+      @include fadeIn;
+    }
+  }
+  &-right {
+    min-width: 20rem;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    & span {
+      @include fadeIn;
+      margin: 2rem;
+      font-size: 2rem;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.2);
+      }
+      &:nth-child(3) {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .Nav-left h1 {
+    font-size: 2rem;
+  }
+  .Nav-right span:nth-child(1) {
+    display: none;
+  }
+  .Nav-right span:nth-child(2) {
+    display: none;
+  }
+  .Nav-right span:nth-child(3) {
+    display: block;
+    & a {
+      color: white;
+    }
+  }
+}

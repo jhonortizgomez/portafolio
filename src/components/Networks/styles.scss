@@ -1,0 +1,50 @@
+@import "../../styles/vars.scss";
+@import "../../styles/animations.scss";
+
+.Networks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &-container {
+    background-color: rgba(0, 0, 0, 0.795);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    & .icon {
+      font-size: 3rem;
+      cursor: pointer;
+    }
+    &__whatsapp {
+      color: #57fa79;
+    }
+    &__linkedin {
+      color: #0a66c2;
+    }
+    &__github {
+      color: white;
+    }
+    &__twitter {
+      color: #1d9bf0;
+    }
+    &__instagram {
+      color: #fdad4c;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .Networks {
+    display: block;
+    height: 40%;
+  }
+  .Networks-container {
+    background-color: rgba(0, 0, 0, 0.795);
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 100%;
+  }
+}

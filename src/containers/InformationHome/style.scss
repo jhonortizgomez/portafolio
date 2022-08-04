@@ -1,0 +1,20 @@
+@import "../../styles/vars.scss";
+
+.Information {
+  margin: 1rem 2rem;
+  border-radius: 2rem;
+  box-shadow: rgba($color-secundary, 0.25) 0px 5px 15px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 950px) {
+  .Information {
+    height: 80vh;
+  }
+}
+@media (max-width: 550px) {
+  .Information {
+    flex-direction: column;
+  }
+}

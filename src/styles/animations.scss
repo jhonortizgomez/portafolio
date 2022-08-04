@@ -1,0 +1,14 @@
+@mixin fadeIn($time: 1s, $type: ease) {
+  animation: $time fadeIn $type;
+}
+
+@keyframes fadeIn {
+  from {
+    filter: blur(5px);
+    opacity: 0;
+  }
+  to {
+    filter: 0;
+    opacity: 1;
+  }
+}

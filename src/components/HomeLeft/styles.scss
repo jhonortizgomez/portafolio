@@ -1,0 +1,48 @@
+@import "../../styles/vars.scss";
+@import "../../styles/animations.scss";
+
+.HomeLeft {
+  @include fadeIn;
+  padding-left: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 50%;
+  &-greeting {
+    font-size: 4rem;
+    font-weight: 100;
+  }
+  &-name {
+    font-size: 3rem;
+    font-weight: 100;
+    margin-bottom: 5rem;
+  }
+  &-position {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 7rem;
+    background-color: rgba(0, 0, 0, 0.877);
+    color: yellow;
+    padding: 0 1rem;
+    text-align: center;
+  }
+  &-button {
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0.877);
+    box-shadow: rgba(yellow, 0.35) 0px 5px 15px;
+    color: $color-secundary;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+@media (max-width: 550px) {
+  .HomeLeft {
+    display: block;
+    width: 100%;
+  }
+}

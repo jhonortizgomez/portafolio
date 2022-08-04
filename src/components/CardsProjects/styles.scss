@@ -1,0 +1,90 @@
+@import "../../styles/vars.scss";
+@import "../../styles/animations.scss";
+
+.Cards {
+  width: 96%;
+  height: 82vh;
+  gap: 1rem;
+  margin: 0 auto;
+  padding: 1rem 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  box-shadow: rgba(white, 0.25) 0 0.5rem 1.5rem;
+  border-radius: 1.5rem;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  & .Card {
+    border-radius: 2rem;
+    background: rgba(0, 0, 0, 0.76);
+    margin-top: 1.5rem;
+    &-img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 0.3rem;
+      border-top: 3rem;
+      border-top-left-radius: 2rem;
+      border-top-right-radius: 2rem;
+    }
+    &-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      & h2 {
+        font-size: $font-middle;
+        padding: 1rem;
+        text-align: center;
+      }
+      & p {
+        font-size: $font-small;
+        text-align: center;
+      }
+      & button {
+        --glow-color: rgb(89, 95, 5);
+        --glow-spread-color: rgba(167, 199, 51, 0.781);
+        --enhanced-glow-color: rgb(175, 197, 115);
+        --btn-color: rgb(145, 194, 81);
+        cursor: pointer;
+        border: 0.25em solid var(--glow-color);
+        padding: 0.5rem 1.5rem;
+        color: var(--glow-color);
+        font-size: 1rem;
+        font-weight: bold;
+        border-radius: 1em;
+        outline: none;
+        box-shadow: 0 0 0.5rem 0.05rem var(--glow-color),
+          0 0 1rem 0.5rem var(--glow-spread-color);
+        position: relative;
+        transition: all 0.3s;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        &::after {
+          position: absolute;
+          top: 120%;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          opacity: 0.2;
+          margin: 1rem;
+        }
+        &:hover {
+          color: black;
+        }
+      }
+    }
+  }
+  & .row1 {
+    @include fadeIn($time: 1s);
+  }
+  & .row2 {
+    @include fadeIn($time: 3s);
+  }
+}
+
+@media (max-width: 550px) {
+  .Cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,0 +1,20 @@
+@import "../../styles/vars.scss";
+
+.Main {
+  background-color: #040406;
+  background-image: url("https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr 85%;
+}
+
+@media (max-width: 950px) {
+  .Main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}

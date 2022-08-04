@@ -1,0 +1,63 @@
+@import "../../styles/vars.scss";
+@import "../../styles/animations.scss";
+
+.Technologies {
+  @include fadeIn($time: 2s);
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  &-icons {
+    display: flex;
+    justify-content: space-evenly;
+    & span svg {
+      width: 4rem;
+      height: 4rem;
+    }
+    & .box {
+      box-shadow: rgba(yellow, 0.25) 0px 5px 15px;
+      border-radius: 4rem;
+      display: grid;
+      place-items: center;
+      padding: 1rem;
+      background-color: rgba(0, 0, 0, 0.514);
+    }
+    & .react svg {
+      color: #61dafb;
+    }
+    & .sass svg {
+      color: #bf4080;
+    }
+    & .webpack svg {
+      color: #5299c8;
+    }
+    & .js svg {
+      color: #efd81d;
+    }
+    & .router svg {
+      color: #bc3640;
+    }
+    & .html svg {
+      color: #e96228;
+    }
+    & .css svg {
+      color: #2862e9;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .Technologies {
+    flex-direction: row;
+    overflow-x: hidden;
+    width: 100%;
+
+    &-icons span svg {
+      width: 2rem;
+      height: 2rem;
+    }
+    & .box {
+      box-shadow: none;
+    }
+  }
+}

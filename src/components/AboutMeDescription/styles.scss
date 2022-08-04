@@ -1,0 +1,30 @@
+@import "../../styles/vars.scss";
+@import "../../styles/animations.scss";
+
+.AboutMeDescription {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: $font-middle;
+  font-weight: 500;
+  width: 50%;
+  height: 81.8vh;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.808);
+  overflow-y: scroll;
+  @include fadeIn;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  & p {
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .AboutMeDescription {
+    font-size: $font-small;
+    width: 100%;
+    height: auto;
+  }
+}

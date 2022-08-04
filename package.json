@@ -1,0 +1,45 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Este es mi portafolio web, en el cual podrás conocer un poco de mí y mis habilidades en el desarrollo web como Front-end Developer.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "",
+    "start": "webpack-dev-server --mode development",
+    "build": "webpack --mode production"
+  },
+  "keywords": [
+    "Portfolio",
+    "HTML",
+    "SASS",
+    "JS",
+    "REACT"
+  ],
+  "author": "Jhon Ortiz Gomez",
+  "license": "ISC",
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.4.0",
+    "react-router-dom": "^6.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.10",
+    "@babel/preset-env": "^7.18.10",
+    "@babel/preset-react": "^7.18.6",
+    "babel-loader": "^8.2.5",
+    "css-loader": "^6.7.1",
+    "file-loader": "^6.2.0",
+    "gh-pages": "^4.0.0",
+    "html-loader": "^4.1.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.6.1",
+    "sass": "^1.54.0",
+    "sass-loader": "^13.0.2",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.9.3"
+  }
+}
