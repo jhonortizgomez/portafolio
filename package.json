@@ -6,7 +6,9 @@
   "scripts": {
     "test": "",
     "start": "webpack-dev-server --mode development",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [
     "Portfolio",
@@ -41,5 +43,6 @@
     "webpack": "^5.74.0",
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.9.3"
-  }
+  },
+  "homapage": "https://jhonortizgomez.github.io/portafolio"
 }
