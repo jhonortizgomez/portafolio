@@ -9,8 +9,7 @@ export const AboutMeDescription = () => {
           Soy Jhon Ortiz Gómez, profesional en mercadeo egresado de la
           Universidad de Ibagué en la ciudad musical de Colombia. Descubri una
           pasión por la programación cuando por hobbie en mis tiempos libres
-          construi mi primera landing page, la cual cuando iniciaba era de dia y
-          sin darme cuenta, cuando terminaba era de noche.
+          construi mi primera landing page.
         </p>
         <p>
           Entonces, decidí empezar a aprender sobre tecnologías web
@@ -19,9 +18,9 @@ export const AboutMeDescription = () => {
         </p>
         <p>
           Actualmente sigo avanzado en mi aprendizaje, enfocandome en el
-          desarrollo Frontend y he adquirido habilidades muy profundas en este
-          perfil conociendo y utilizando las tegnologias de la siguiente
-          columna.
+          desarrollo Frontend, he adquirido habilidades muy profundas en este
+          perfil, que deseo pasar al siguiente nivel y seguir conociendo y
+          utilizando a nivel laboral las siguientes tegnologias.
         </p>
       </div>
     </section>
