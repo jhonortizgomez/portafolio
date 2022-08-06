@@ -11,11 +11,11 @@ export const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/dist" element={<Home />} />
-        <Route path="/dist/about-me" element={<AboutMe />} />
-        <Route path="/dist/projects" element={<Projects />} />
-        <Route path="/dist/contact" element={<Contact />} />
-        <Route path="/dist/menu" element={<Menu />} />
+        <Route path="/portafolio" element={<Home />} />
+        <Route path="/portafolio/about-me" element={<AboutMe />} />
+        <Route path="/portafolio/projects" element={<Projects />} />
+        <Route path="/portafolio/contact" element={<Contact />} />
+        <Route path="/portafolio/menu" element={<Menu />} />
       </Routes>
     </BrowserRouter>
   );

@@ -24,16 +24,16 @@ export const Header = ({ display }) => {
       </section>
       <section className="Header-list">
         <ul>
-          <Link to="/dist">
+          <Link to="/portafolio">
             <li>Inicio</li>
           </Link>
-          <Link to="/dist/about-me">
+          <Link to="/portafolio/about-me">
             <li>Sobre mi</li>
           </Link>
-          <Link to="/dist/projects">
+          <Link to="/portafolio/projects">
             <li>Proyectos</li>
           </Link>
-          <Link to="/dist/contact">
+          <Link to="/portafolio/contact">
             <li>Contacto</li>
           </Link>
         </ul>
@@ -47,7 +47,7 @@ export const Header = ({ display }) => {
         </div>
       </section>
       <section className="Header-footer">
-        <Link to="/dist">
+        <Link to="/portafolio">
           <img src={logo} />
         </Link>
       </section>

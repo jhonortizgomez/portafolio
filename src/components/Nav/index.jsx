@@ -19,7 +19,7 @@ export const Nav = ({ title }) => {
           <MdDarkMode />
         </span>
         <span>
-          <Link to="/menu">
+          <Link to="/portafolio/menu">
             <FiMenu />
           </Link>
         </span>

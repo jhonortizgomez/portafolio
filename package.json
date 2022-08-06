@@ -8,7 +8,7 @@
     "start": "webpack-dev-server --config webpack.config.dev.js",
     "build": "webpack --config webpack.config.js",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b main -d dist"
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [
     "Portfolio",
