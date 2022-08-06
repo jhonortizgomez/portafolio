@@ -6,7 +6,6 @@ import { BsTwitter } from "react-icons/bs";
 import { BsInstagram } from "react-icons/bs";
 import "animate.css";
 import "./styles.scss";
-import { Link } from "react-router-dom";
 
 export const Networks = () => {
   return (

@@ -15,7 +15,7 @@ export const Header = ({ display }) => {
       <section className="Header-photo">
         <img
           className="Header-photo__img"
-          src="https://media-exp1.licdn.com/dms/image/C5603AQHSCMq3mg-olg/profile-displayphoto-shrink_200_200/0/1654816551674?e=1665014400&v=beta&t=nUHhaLZq1TPM2f0ad6C_YMSB0i0ZYqMJ6FMuRi5I1lo"
+          src="https://pbs.twimg.com/profile_images/1555332067524763648/ZCRoMb40_400x400.jpg"
         />
         <div className="Header-photo__title">
           <h1>Jhon Ortiz Gomez</h1>
@@ -24,16 +24,16 @@ export const Header = ({ display }) => {
       </section>
       <section className="Header-list">
         <ul>
-          <Link to="/">
+          <Link to="/dist">
             <li>Inicio</li>
           </Link>
-          <Link to="/about-me">
+          <Link to="/dist/about-me">
             <li>Sobre mi</li>
           </Link>
-          <Link to="/projects">
+          <Link to="/dist/projects">
             <li>Proyectos</li>
           </Link>
-          <Link to="/contact">
+          <Link to="/dist/contact">
             <li>Contacto</li>
           </Link>
         </ul>
@@ -47,7 +47,7 @@ export const Header = ({ display }) => {
         </div>
       </section>
       <section className="Header-footer">
-        <Link to="/">
+        <Link to="/dist">
           <img src={logo} />
         </Link>
       </section>
