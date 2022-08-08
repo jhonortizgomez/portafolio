@@ -61,7 +61,7 @@ Instala las dependencias necesarias.
 ### `npm run start`
 
 Corre la app en modo de desarrollo.\
-Abre [http://localhost:8080](http://localhost:8080) para verlo en el navegador.
+Abre [http://localhost:8000](http://localhost:8000) para verlo en el navegador.
 
 - La pagina se volvera a cargar si realizas modificaciones.
 - También puedes ver cualquier error en la consola.
