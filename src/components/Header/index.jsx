@@ -9,7 +9,8 @@ import logoBlack from "@images/logo-black.png";
 import "./style.scss";
 
 export const Header = () => {
-  const { menuMobile, toggleHeader, darkMode } = useContext(appContext);
+  const { menuMobile, toggleHeader, darkMode, toggleDarkMode } =
+    useContext(appContext);
 
   return (
     <header
@@ -46,7 +47,7 @@ export const Header = () => {
           <span>
             <BsTranslate />
           </span>
-          <span>
+          <span onClick={() => toggleDarkMode()}>
             <MdDarkMode />
           </span>
         </div>
