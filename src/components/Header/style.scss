@@ -1,15 +1,56 @@
 @import "../../styles/vars.scss";
 @import "../../styles/animations.scss";
 
-.Header {
+.modeLight {
+  background-color: $color-secundary;
+  & a {
+    color: $color-primary;
+  }
+  & li {
+    border-bottom: 0.1rem solid $color-primary;
+  }
+  & .Header-photo {
+    &__img {
+      border: 0.1rem solid $color-primary;
+      box-shadow: rgba($color-primary, 0.35) 0px 5px 15px;
+    }
+    &__title {
+      color: $color-primary;
+    }
+  }
+  & .Header-footer img {
+    box-shadow: rgba($color-primary, 0.35) 0px 5px 15px;
+  }
+}
+.modeDark {
   background-color: $color-primary;
+  & a {
+    color: $color-secundary;
+  }
+  & li {
+    border-bottom: 0.1rem solid $color-secundary;
+  }
+  &-photo {
+    &__img {
+      border: 0.2rem solid $color-secundary;
+      box-shadow: rgba($color-secundary, 0.35) 0px 5px 15px;
+    }
+    &__title {
+      color: $color-secundary;
+    }
+  }
+  & .Header-footer img {
+    box-shadow: rgba($color-secundary, 0.35) 0px 5px 15px;
+  }
+}
+
+.Header {
   opacity: 1;
   min-width: 25rem;
   height: 100vh;
   display: grid;
   grid-template-rows: auto 1fr auto;
   flex-direction: column;
-  z-index: 1;
 
   &-photo {
     display: flex;
@@ -21,12 +62,9 @@
       width: 15rem;
       height: 15rem;
       border-radius: 50%;
-      border: 0.1rem solid $color-secundary;
       margin: 1.5rem auto;
-      box-shadow: rgba($color-secundary, 0.35) 0px 5px 15px;
     }
     &__title {
-      color: $color-secundary;
       text-align: center;
       & h1 {
         font-size: $font-large;
@@ -52,16 +90,14 @@
         font-weight: 100;
         cursor: pointer;
         padding: 1rem;
-        border-bottom: 0.1rem solid $color-secundary;
-        color: white;
       }
       & li:hover {
         border: 0.1rem solid $color-secundary;
         border-radius: 1rem;
         transform: scale(1.1);
-        background-color: rgba(255, 255, 255, 0);
+        background-color: $color-primary;
         opacity: 0.6;
-        color: white;
+        color: $color-secundary;
       }
     }
     &__button {
@@ -80,7 +116,7 @@
       width: 7rem;
       height: 7rem;
       border-radius: 5rem;
-      box-shadow: rgba($color-secundary, 0.35) 0px 5px 15px;
+
       margin-bottom: 2rem;
       cursor: pointer;
       &:hover {
@@ -104,8 +140,14 @@
       font-size: 1.5rem;
       margin: 0.5rem 0;
     }
+    &-list__button {
+      display: flex;
+    }
   }
-  .on {
+  .active {
+    justify-content: space-evenly;
     display: flex;
+    position: absolute;
+    right: 35%;
   }
 }

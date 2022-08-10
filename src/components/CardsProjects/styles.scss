@@ -1,6 +1,18 @@
 @import "../../styles/vars.scss";
 @import "../../styles/animations.scss";
 
+.lightMode {
+  box-shadow: rgba($color-primary, 0.25) 0 0.5rem 1.5rem;
+  & .Card {
+    color: $color-secundary;
+  }
+}
+.darkMode {
+  box-shadow: rgba($color-secundary, 0.25) 0 0.5rem 1.5rem;
+  & .Card {
+    color: $color-secundary;
+  }
+}
 .Cards {
   width: 96%;
   height: 82vh;
@@ -10,7 +22,6 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, auto);
-  box-shadow: rgba(white, 0.25) 0 0.5rem 1.5rem;
   border-radius: 1.5rem;
   overflow-y: scroll;
   &::-webkit-scrollbar {
@@ -18,7 +29,7 @@
   }
   & .Card {
     border-radius: 2rem;
-    background: rgba(0, 0, 0, 0.76);
+    background: $color-primary;
     margin-top: 1.5rem;
     &-img {
       width: 100%;
@@ -70,7 +81,7 @@
           margin: 1rem;
         }
         &:hover {
-          color: black;
+          color: $color-primary;
         }
       }
     }

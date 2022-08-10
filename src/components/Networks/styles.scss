@@ -6,7 +6,7 @@
   justify-content: center;
   align-items: center;
   &-container {
-    background-color: rgba(0, 0, 0, 0.795);
+    background-color: $color-primary;
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -40,7 +40,7 @@
     height: 40%;
   }
   .Networks-container {
-    background-color: rgba(0, 0, 0, 0.795);
+    background-color: $color-primary;
     padding: 2rem;
     display: flex;
     flex-direction: row;

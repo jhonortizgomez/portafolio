@@ -2,6 +2,7 @@
 @import "../../styles/animations.scss";
 
 .AboutMeDescription {
+  background-color: $color-primary;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,7 +11,7 @@
   width: 50%;
   height: 81.8vh;
   padding: 2rem;
-  background-color: rgba(0, 0, 0, 0.808);
+
   overflow-y: scroll;
   @include fadeIn;
   &::-webkit-scrollbar {

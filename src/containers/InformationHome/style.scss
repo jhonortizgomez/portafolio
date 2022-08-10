@@ -1,9 +1,15 @@
 @import "../../styles/vars.scss";
 
+.lightMode {
+  box-shadow: rgba($color-primary, 0.25) 0px 5px 15px;
+}
+.darkMode {
+  box-shadow: rgba($color-secundary, 0.25) 0px 5px 15px;
+}
+
 .Information {
   margin: 1rem 2rem;
   border-radius: 2rem;
-  box-shadow: rgba($color-secundary, 0.25) 0px 5px 15px;
   display: flex;
   justify-content: space-evenly;
 }

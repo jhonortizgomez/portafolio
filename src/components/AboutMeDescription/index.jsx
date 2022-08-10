@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
+import { appContext } from "@context/appContext";
+
 import "./styles.scss";
 
 export const AboutMeDescription = () => {
+  const { darkMode } = useContext(appContext);
   return (
-    <section className="AboutMeDescription">
+    <section
+      className={`AboutMeDescription ${darkMode ? "darkMode" : "modeLight"}`}
+    >
       <div>
         <p>
           Soy Jhon Ortiz Gómez, profesional en mercadeo egresado de la

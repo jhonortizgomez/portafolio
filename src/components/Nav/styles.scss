@@ -1,8 +1,19 @@
 @import "../../styles/vars.scss";
 @import "../../styles/animations.scss";
 
-.Nav {
+.modeDark {
   box-shadow: rgba($color-secundary, 0.25) 0px 5px 15px;
+  color: $color-secundary;
+}
+.modeLight {
+  box-shadow: rgba($color-primary, 0.25) 0px 5px 15px;
+  color: $color-primary;
+  &-left h1 {
+    color: $color-primary;
+  }
+}
+
+.Nav {
   border-radius: 1.5rem;
   margin: 2rem 2rem;
   height: 6rem;
@@ -17,7 +28,6 @@
     padding-left: 4rem;
     & h1 {
       font-size: 4rem;
-      color: white;
       font-weight: 800;
       @include fadeIn;
     }
@@ -43,6 +53,15 @@
   }
 }
 
+@media (max-width: 950px) {
+  .Nav-right span:nth-child(3) {
+    display: block;
+    & a {
+      color: $color-secundary;
+    }
+  }
+}
+
 @media (max-width: 550px) {
   .Nav-left h1 {
     font-size: 2rem;
@@ -56,7 +75,7 @@
   .Nav-right span:nth-child(3) {
     display: block;
     & a {
-      color: white;
+      color: $color-secundary;
     }
   }
 }

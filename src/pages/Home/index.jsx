@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useContext } from "react";
+import { appContext } from "@context/appContext";
+
 import { Header } from "../../components/Header";
 import { Main } from "../../containers/Main";
 
