@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { appContext } from "@context/appContext";
 
 import { MdDarkMode } from "react-icons//md";
-import { BsTranslate } from "react-icons/bs";
 import logo from "@images/logo.png";
 import logoBlack from "@images/logo-black.png";
 import "./style.scss";
@@ -44,9 +43,6 @@ export const Header = () => {
           </Link>
         </ul>
         <div className={`Header-list__button`}>
-          <span>
-            <BsTranslate />
-          </span>
           <span onClick={() => toggleDarkMode()}>
             <MdDarkMode />
           </span>

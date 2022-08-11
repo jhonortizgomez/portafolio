@@ -16,9 +16,6 @@ export const Nav = ({ title }) => {
         <h1>{title} </h1>
       </div>
       <div className="Nav-right">
-        <span>
-          <BsTranslate />
-        </span>
         <span onClick={() => toggleDarkMode()}>
           {darkMode && <MdDarkMode />}
           {!darkMode && <MdOutlineLightMode />}
