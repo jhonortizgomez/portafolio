@@ -14,8 +14,8 @@
   }
 }
 .Cards {
-  width: 96%;
-  height: 82vh;
+  width: 80%;
+  height: 80%;
   gap: 1rem;
   margin: 0 auto;
   padding: 1rem 3rem;
@@ -30,15 +30,9 @@
   & .Card {
     border-radius: 2rem;
     background: $color-primary;
-    margin-top: 1.5rem;
-    &-img {
-      width: 100%;
-      height: auto;
-      margin-bottom: 0.3rem;
-      border-top: 3rem;
-      border-top-left-radius: 2rem;
-      border-top-right-radius: 2rem;
-    }
+
+    display: grid;
+    place-items: center;
     &-text {
       display: flex;
       flex-direction: column;

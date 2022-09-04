@@ -7,7 +7,7 @@ import { Home } from "@pages/Home";
 import { AboutMe } from "@pages/AboutMe";
 import { Projects } from "@pages/Projects";
 import { Contact } from "@pages/Contact";
-import "@styles/App.scss";
+import "./App.scss";
 
 export const App = () => {
   const incialState = useInicialState();
