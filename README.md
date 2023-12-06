@@ -1,6 +1,6 @@
 # [Portafolio](https://jhonortizgomez.github.io/portafolio/)
 
-¡Bienvenido a mi portafolio web! Soy Jhon Ortiz Gómez, un Front-end Developer apasionado por la creación de experiencias web cautivadoras. Aquí, encontrarás un vistazo a mi trabajo y las tecnologías que utilicé para llevar a cabo este proyecto.
+¡Bienvenido/a a mi portafolio web! Soy Jhon Ortiz Gómez, un Front-end Developer apasionado por la creación de experiencias web cautivadoras. Aquí, encontrarás un vistazo a mi trabajo y las tecnologías que utilicé para llevar a cabo este proyecto.
 
 ## Tecnologia utilizadas
 
