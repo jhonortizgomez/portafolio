@@ -1,6 +1,6 @@
 # [Portafolio](https://jhonortizgomez.github.io/portafolio/)
 
-Este es mi portafolio web.
+¡Bienvenido a mi portafolio web! Soy Jhon Ortiz Gómez, un Front-end Developer apasionado por la creación de experiencias web cautivadoras. Aquí, encontrarás un vistazo a mi trabajo y las tecnologías que utilicé para llevar a cabo este proyecto.
 
 ## Tecnologia utilizadas
 
@@ -73,6 +73,10 @@ Construye la app para producción en la carpeta `dist`.
 Empaqueta completamente los archivos en modo producción y optimiza la compilación para tener mejor rendimiento.
 
 Tu aplicación esta lista para ser implementada.
+
+¡Gracias por visitar mi portafolio! Si tienes alguna pregunta o comentario, no dudes en ponerte en contacto conmigo.
+
+
 
 ## Autor
 
