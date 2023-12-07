@@ -3,53 +3,153 @@
 
 .HomeLeft {
   @include fadeIn;
-  padding-left: 5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
   width: 50%;
-  &-greeting {
-    font-size: 4rem;
-    font-weight: 100;
+  padding: 10px 5px;
+  background: #080808be;
+  border-radius: 5%;
+
+  .wrapper-title {
+    .HomeLeft-greeting {
+      font-weight: 100;
+      margin-left: 10px;
+    }
+
+    .HomeLeft-name {
+      font-weight: 100;
+      margin-bottom: 1rem;
+      margin-left: 10px;
+    }
   }
 
-  &-description {
-    font-size: 1.2rem;
-    font-weight: 100;
-    margin-bottom: 5rem;
-  }
+  .wrapper-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+    .HomeLeft-position {
+      font-size: 3rem;
+      font-weight: 800;
+      color: yellow;
+      padding: 0 1rem;
+      text-align: center;
+    }
 
-  &-name {
-    font-size: 3rem;
-    font-weight: 100;
-    margin-bottom: 5rem;
-  }
-  &-position {
-    font-size: 3rem;
-    font-weight: 800;
-    margin-bottom: 7rem;
-    background-color: $color-primary;
-    color: yellow;
-    padding: 0 1rem;
-    text-align: center;
-  }
-  &-button {
-    padding: 1.5rem;
-    border-radius: 1rem;
-    border: 0;
-    background-color: $color-primary;
-    box-shadow: rgba(yellow, 0.35) 0px 5px 15px;
-    color: $color-secundary;
-    cursor: pointer;
-    &:hover {
-      transform: scale(1.1);
+    .HomeLeft-description {
+      font-weight: 100;
+
+      max-width: 550px;
+    }
+    .HomeLeft-button {
+      padding: 1.5rem;
+      border-radius: 1rem;
+      border: 0;
+      background-color: $color-primary;
+      box-shadow: rgba(yellow, 0.35) 0px 5px 15px;
+      color: $color-secundary;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.1);
+      }
     }
   }
 }
-@media (max-width: 550px) {
+
+@media only screen and (max-width: 767px) {
   .HomeLeft {
-    display: block;
     width: 100%;
+    height: 90%;
+    padding: 10px;
+    margin-top: -30px;
+    .wrapper-title {
+      .HomeLeft-greeting {
+        font-size: 2.4rem;
+      }
+
+      .HomeLeft-name {
+        font-size: 2.2rem;
+      }
+    }
+    .wrapper-description {
+      .HomeLeft-position {
+        font-size: 1.9rem;
+        margin-bottom: 10px;
+      }
+
+      .HomeLeft-description {
+        font-size: 1.4rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .HomeLeft-button {
+        padding: 1rem;
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .HomeLeft {
+    margin-left: 5%;
+    height: 90%;
+  }
+
+  .wrapper-title {
+    .HomeLeft-greeting {
+      font-size: 3rem;
+    }
+
+    .HomeLeft-name {
+      font-size: 2.4rem;
+    }
+  }
+  .wrapper-description {
+    .HomeLeft-position {
+      font-size: 1.9rem;
+    }
+
+    .HomeLeft-description {
+      padding: 0px 5px 0px 5px;
+      font-size: 1.3rem;
+      margin-bottom: 3rem;
+    }
+
+    .HomeLeft-button {
+      padding: 0.5rem 1rem;
+      font-size: 1.4rem;
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .HomeLeft {
+    margin-left: 5%;
+    height: 85%;
+
+    .wrapper-title {
+      .HomeLeft-greeting {
+        font-size: 4rem;
+      }
+
+      .HomeLeft-name {
+        font-size: 3rem;
+      }
+    }
+    .wrapper-description {
+      .HomeLeft-position {
+        font-size: 1.9rem;
+      }
+
+      .HomeLeft-description {
+        font-size: 1.6rem;
+        padding: 0px 5px 0px 5px;
+        margin-bottom: 6rem;
+      }
+
+      .HomeLeft-button {
+        padding: 1rem;
+        font-size: 1.5rem;
+      }
+    }
   }
 }
