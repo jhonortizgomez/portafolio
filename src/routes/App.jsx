@@ -4,7 +4,6 @@ import { appContext } from "../context/appContext";
 import { useInicialState } from "@hooks/useInicialState";
 
 import { Home } from "@pages/Home";
-import { AboutMe } from "@pages/AboutMe";
 import { Projects } from "@pages/Projects";
 import { Contact } from "@pages/Contact";
 import "./App.scss";
@@ -16,7 +15,7 @@ export const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/portafolio/about-me" element={<AboutMe />} />
+
           <Route path="/portafolio/projects" element={<Projects />} />
           <Route path="/portafolio/contact" element={<Contact />} />
         </Routes>

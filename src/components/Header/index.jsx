@@ -32,9 +32,6 @@ export const Header = () => {
           <Link to="/" onClick={() => toggleHeader()}>
             <li>Inicio</li>
           </Link>
-          <Link to="/portafolio/about-me" onClick={() => toggleHeader()}>
-            <li>Sobre mi</li>
-          </Link>
           <Link to="/portafolio/projects" onClick={() => toggleHeader()}>
             <li>Proyectos</li>
           </Link>

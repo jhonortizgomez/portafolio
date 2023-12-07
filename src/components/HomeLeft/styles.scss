@@ -128,7 +128,7 @@
 
     .wrapper-title {
       .HomeLeft-greeting {
-        font-size: 4rem;
+        font-size: 3.5rem;
       }
 
       .HomeLeft-name {
@@ -143,12 +143,25 @@
       .HomeLeft-description {
         font-size: 1.6rem;
         padding: 0px 5px 0px 5px;
-        margin-bottom: 6rem;
+        margin-bottom: 1rem;
       }
 
       .HomeLeft-button {
         padding: 1rem;
         font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1036px) {
+  .HomeLeft {
+    margin-left: 5%;
+    height: 85%;
+
+    .wrapper-description {
+      .HomeLeft-description {
+        margin-bottom: 4rem;
       }
     }
   }
