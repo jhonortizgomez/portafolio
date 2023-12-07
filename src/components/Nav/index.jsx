@@ -3,7 +3,6 @@ import { appContext } from "@context/appContext";
 
 import { MdDarkMode } from "react-icons/md";
 import { MdOutlineLightMode } from "react-icons/md";
-import { BsTranslate } from "react-icons/bs";
 import { FiMenu } from "react-icons/fi";
 import "./styles.scss";
 

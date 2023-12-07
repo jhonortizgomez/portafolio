@@ -29,7 +29,7 @@ export const Header = () => {
       </section>
       <section className="Header-list">
         <ul>
-          <Link to="/portafolio" onClick={() => toggleHeader()}>
+          <Link to="/" onClick={() => toggleHeader()}>
             <li>Inicio</li>
           </Link>
           <Link to="/portafolio/about-me" onClick={() => toggleHeader()}>
