@@ -1,18 +1,6 @@
 @import "../../styles/vars.scss";
 @import "../../styles/animations.scss";
 
-.modeDark {
-  box-shadow: rgba($color-secundary, 0.25) 0px 5px 15px;
-  color: $color-secundary;
-}
-.modeLight {
-  box-shadow: rgba($color-primary, 0.25) 0px 5px 15px;
-  color: $color-primary;
-  &-left h1 {
-    color: $color-primary;
-  }
-}
-
 .Nav {
   border-radius: 1.5rem;
   margin: 10px 10px;
@@ -29,6 +17,7 @@
     padding-left: 4rem;
     & h1 {
       font-weight: 800;
+      color: yellow;
       @include fadeIn;
     }
   }
@@ -37,6 +26,7 @@
     display: flex;
     justify-content: end;
     align-items: center;
+
     & span {
       @include fadeIn;
       margin: 2rem;

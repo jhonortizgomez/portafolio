@@ -14,7 +14,7 @@ export const Nav = ({ title }) => {
       </div>
       <div className="Nav-right">
         <span className="menu-icon" onClick={() => toggleMenuMobile()}>
-          <FiMenu />
+          <FiMenu color="#fff" />
         </span>
       </div>
     </nav>

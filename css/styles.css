@@ -8,135 +8,73 @@
     opacity: 1;
   }
 }
-.HomeLeft {
-  animation: 1s fadeIn ease;
-  padding: 10px 5px;
-  background: rgba(8, 8, 8, 0.6196078431);
-  border-radius: 5%;
-  height: auto;
-}
-.HomeLeft .wrapper-title .HomeLeft-greeting {
-  font-weight: 100;
-  margin-left: 10px;
-}
-.HomeLeft .wrapper-title .HomeLeft-name {
-  font-weight: 100;
-  margin-bottom: 1rem;
-  margin-left: 10px;
-}
-.HomeLeft .wrapper-description {
+.Nav {
+  border-radius: 1.5rem;
+  margin: 10px 10px;
+  height: 6rem;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: left;
-  align-items: center;
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 5px 15px;
 }
-.HomeLeft .wrapper-description .HomeLeft-position {
+.Nav-left {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-left: 4rem;
+}
+.Nav-left h1 {
   font-weight: 800;
   color: yellow;
-  padding: 0 1rem;
-  text-align: center;
+  animation: 1s fadeIn ease;
 }
-.HomeLeft .wrapper-description .HomeLeft-description {
-  font-weight: 100;
-  max-width: 550px;
-  line-height: 1.5;
+.Nav-right {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }
-.HomeLeft .wrapper-description .HomeLeft-button {
-  padding: 1rem 1.5rem;
-  border-radius: 1rem;
-  border: 0;
-  background-color: yellow;
-  box-shadow: rgba(255, 255, 0, 0.35) 0px 5px 15px;
-  color: black;
-  font-weight: 900;
+.Nav-right span {
+  animation: 1s fadeIn ease;
+  margin: 2rem;
+  font-size: 2rem;
   cursor: pointer;
 }
-.HomeLeft .wrapper-description .HomeLeft-button:hover {
-  transform: scale(1.1);
+.Nav-right span:hover {
+  transform: scale(1.2);
 }
 
 @media only screen and (max-width: 767px) {
-  .HomeLeft {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
+  .Nav {
+    height: 3rem;
+    justify-content: center;
   }
-  .HomeLeft .wrapper-title .HomeLeft-greeting {
-    font-size: 2.4rem;
+  .Nav-left h1 {
+    font-size: 2rem;
   }
-  .HomeLeft .wrapper-title .HomeLeft-name {
-    font-size: 2.2rem;
+  .Nav-right span:nth-child(1) {
+    display: none;
   }
-  .HomeLeft .wrapper-description .HomeLeft-position {
-    font-size: 1.9rem;
-    margin-bottom: 10px;
-  }
-  .HomeLeft .wrapper-description .HomeLeft-description {
-    font-size: 1.4rem;
-    margin-bottom: 2rem;
-  }
-  .HomeLeft .wrapper-description .HomeLeft-button {
-    padding: 1rem;
-    font-size: 1.4rem;
+  .Nav-right span.menu-icon {
+    display: block;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
-  .HomeLeft {
-    margin-left: 5%;
-    width: 70%;
+  .Nav-right span.menu-icon {
+    display: block;
   }
-  .wrapper-title .HomeLeft-greeting {
-    font-size: 2rem;
-  }
-  .wrapper-title .HomeLeft-name {
-    font-size: 1.8rem;
-  }
-  .wrapper-description .HomeLeft-position {
-    font-size: 1.6rem;
-    margin-bottom: 15px;
-  }
-  .wrapper-description .HomeLeft-description {
-    padding: 0px 5px 0px 5px;
-    font-size: 1.2rem;
-    margin-bottom: 3rem;
-    letter-spacing: 1px;
-  }
-  .wrapper-description .HomeLeft-button {
-    padding: 0.5rem 1rem;
-    font-size: 1.4rem;
+  .Nav-left h1 {
+    font-size: 3rem;
   }
 }
 @media (min-width: 1024px) {
-  .HomeLeft {
-    margin-left: 5%;
-    width: 60%;
+  .Nav-left {
+    justify-content: center;
   }
-  .HomeLeft .wrapper-title .HomeLeft-greeting {
+  .Nav-right span.menu-icon {
+    display: none;
+  }
+  .Nav-left h1 {
     font-size: 3rem;
-  }
-  .HomeLeft .wrapper-title .HomeLeft-name {
-    font-size: 2rem;
-  }
-  .HomeLeft .wrapper-description .HomeLeft-position {
-    font-size: 1.6rem;
-  }
-  .HomeLeft .wrapper-description .HomeLeft-description {
-    font-size: 1.3rem;
-    padding: 0px 5px 0px 5px;
-    margin-bottom: 1rem;
-    letter-spacing: 1px;
-  }
-  .HomeLeft .wrapper-description .HomeLeft-button {
-    padding: 0.5rem 1.5rem;
-    font-size: 1.5rem;
-  }
-}
-@media (min-width: 1036px) {
-  .HomeLeft {
-    margin-left: 5%;
-  }
-  .HomeLeft .wrapper-description .HomeLeft-description {
-    margin-bottom: 4rem;
   }
 }/*# sourceMappingURL=styles.css.map */
