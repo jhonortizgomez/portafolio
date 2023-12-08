@@ -1,6 +1,8 @@
 @import "../../styles/vars.scss";
 @import "../../styles/animations.scss";
 
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+
 .modeLight {
   background-color: $color-secundary;
   & a {
@@ -50,6 +52,7 @@
   display: grid;
   grid-template-rows: auto 1fr auto;
   flex-direction: column;
+  font-family: "Roboto", sans-serif;
 
   &-photo {
     display: flex;

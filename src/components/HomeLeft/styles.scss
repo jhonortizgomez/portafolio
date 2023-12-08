@@ -28,7 +28,6 @@
     text-align: left;
     align-items: center;
     .HomeLeft-position {
-      font-size: 3rem;
       font-weight: 800;
       color: yellow;
       padding: 0 1rem;
@@ -38,6 +37,7 @@
     .HomeLeft-description {
       font-weight: 100;
       max-width: 550px;
+      line-height: 1.5;
     }
     .HomeLeft-button {
       padding: 1rem 1.5rem;
@@ -96,11 +96,11 @@
 
   .wrapper-title {
     .HomeLeft-greeting {
-      font-size: 3rem;
+      font-size: 2rem;
     }
 
     .HomeLeft-name {
-      font-size: 2.4rem;
+      font-size: 1.8rem;
     }
   }
   .wrapper-description {
@@ -111,7 +111,7 @@
 
     .HomeLeft-description {
       padding: 0px 5px 0px 5px;
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       margin-bottom: 3rem;
       letter-spacing: 1px;
     }
@@ -129,27 +129,27 @@
 
     .wrapper-title {
       .HomeLeft-greeting {
-        font-size: 3.5rem;
+        font-size: 3rem;
       }
 
       .HomeLeft-name {
-        font-size: 3rem;
+        font-size: 2rem;
       }
     }
     .wrapper-description {
       .HomeLeft-position {
-        font-size: 1.9rem;
+        font-size: 1.6rem;
       }
 
       .HomeLeft-description {
-        font-size: 1.6rem;
+        font-size: 1.3rem;
         padding: 0px 5px 0px 5px;
         margin-bottom: 1rem;
         letter-spacing: 1px;
       }
 
       .HomeLeft-button {
-        padding: 1rem;
+        padding: 0.5rem 1.5rem;
         font-size: 1.5rem;
       }
     }
