@@ -5,8 +5,8 @@ import { IoLogoSass } from "react-icons/io";
 import { AiFillHtml5 } from "react-icons/ai";
 import { FaCss3Alt } from "react-icons/fa";
 import { SiReactrouter } from "react-icons/si";
-import { SiWebpack } from "react-icons/si";
-import { SiBootstrap } from "react-icons/si";
+import { SiFirebase } from "react-icons/si";
+import { SiTypescript } from "react-icons/si";
 import "./styles.scss";
 
 export const Technologies = () => {
@@ -22,7 +22,7 @@ export const Technologies = () => {
       </div>
       <div className="Technologies-icons box">
         <span className="webpack box">
-          <SiBootstrap />
+          <SiTypescript />
         </span>
         <span className="sass box">
           <IoLogoSass />
@@ -32,8 +32,8 @@ export const Technologies = () => {
         <span className="webpack box">
           <SiReactrouter />
         </span>
-        <span className="sass box">
-          <SiWebpack />
+        <span className="webpack box">
+          <SiFirebase />
         </span>
       </div>
 

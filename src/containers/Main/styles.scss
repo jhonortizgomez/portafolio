@@ -15,13 +15,25 @@
   width: 100%;
   display: grid;
   grid-template-rows: 1fr 85%;
-  border: 1px solid #fff;
 }
 
-@media (max-width: 950px) {
+@media only screen and (max-width: 767px) {
   .Main {
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: 128vh;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .Main {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 1024px) {
+  .Main {
+    height: 100vh;
   }
 }

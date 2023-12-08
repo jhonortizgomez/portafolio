@@ -46,7 +46,7 @@ export const Header = () => {
         </div>
       </section>
       <section className="Header-footer">
-        <Link to="/portafolio" onClick={() => toggleHeader()}>
+        <Link to="/" onClick={() => toggleHeader()}>
           {darkMode ? <img src={logo} /> : <img src={logoBlack} />}
         </Link>
       </section>

@@ -5,11 +5,14 @@
   @include fadeIn($time: 2s);
   width: 50%;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: space-evenly;
+  gap: 20px;
+
   &-icons {
     display: flex;
-    justify-content: space-evenly;
+    gap: 40px;
+
     & span svg {
       width: 4rem;
       height: 4rem;
@@ -21,6 +24,7 @@
       place-items: center;
       padding: 1rem;
       background-color: $color-primary;
+      margin-bottom: 20px;
     }
     & .react svg {
       color: #61dafb;
@@ -46,10 +50,8 @@
   }
 }
 
-@media (max-width: 550px) {
+@media only screen and (max-width: 767px) {
   .Technologies {
-    flex-direction: row;
-    overflow-x: hidden;
     width: 100%;
 
     &-icons span svg {
@@ -58,6 +60,20 @@
     }
     & .box {
       box-shadow: none;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .Technologies {
+    &-icons {
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .Technologies {
+    &-icons {
     }
   }
 }
