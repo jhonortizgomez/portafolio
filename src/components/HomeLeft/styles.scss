@@ -3,7 +3,6 @@
 
 .HomeLeft {
   @include fadeIn;
-  width: 50%;
   padding: 10px 5px;
   background: #080808be;
   border-radius: 5%;
@@ -37,7 +36,6 @@
 
     .HomeLeft-description {
       font-weight: 100;
-
       max-width: 550px;
     }
     .HomeLeft-button {
@@ -93,6 +91,7 @@
   .HomeLeft {
     margin-left: 5%;
     height: 90%;
+    width: 70%;
   }
 
   .wrapper-title {
@@ -106,13 +105,15 @@
   }
   .wrapper-description {
     .HomeLeft-position {
-      font-size: 1.9rem;
+      font-size: 1.6rem;
+      margin-bottom: 15px;
     }
 
     .HomeLeft-description {
       padding: 0px 5px 0px 5px;
       font-size: 1.3rem;
       margin-bottom: 3rem;
+      letter-spacing: 1px;
     }
 
     .HomeLeft-button {
@@ -125,6 +126,7 @@
   .HomeLeft {
     margin-left: 5%;
     height: 85%;
+    width: 70%;
 
     .wrapper-title {
       .HomeLeft-greeting {
@@ -144,6 +146,7 @@
         font-size: 1.6rem;
         padding: 0px 5px 0px 5px;
         margin-bottom: 1rem;
+        letter-spacing: 1px;
       }
 
       .HomeLeft-button {
