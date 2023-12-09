@@ -21,7 +21,7 @@ export const HomeLeft = () => {
           emocionantes, contáctame. ¡Estoy emocionado por construir algo
           increíble juntos! 🌟
         </p>
-        <Link to="/portafolio/projects">
+        <Link to="/projects">
           <button className="HomeLeft-button">Proyectos</button>
         </Link>
       </span>

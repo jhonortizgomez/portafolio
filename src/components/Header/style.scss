@@ -1,58 +1,12 @@
 @import "../../styles/vars.scss";
 @import "../../styles/animations.scss";
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
-
-.modeLight {
-  background-color: $color-secundary;
-  & a {
-    color: $color-primary;
-  }
-  & li {
-    border-bottom: 0.1rem solid $color-primary;
-  }
-  & .Header-photo {
-    &__img {
-      border: 0.1rem solid $color-primary;
-      box-shadow: rgba($color-primary, 0.35) 0px 5px 15px;
-    }
-    &__title {
-      color: $color-primary;
-    }
-  }
-  & .Header-footer img {
-    box-shadow: rgba($color-primary, 0.35) 0px 5px 15px;
-  }
-}
-.modeDark {
-  background-color: $color-primary;
-  & a {
-    color: $color-secundary;
-  }
-  & li {
-    border-bottom: 0.1rem solid $color-secundary;
-  }
-  &-photo {
-    &__img {
-      border: 0.2rem solid $color-secundary;
-      box-shadow: rgba($color-secundary, 0.35) 0px 5px 15px;
-    }
-    &__title {
-      color: $color-secundary;
-    }
-  }
-  & .Header-footer img {
-    box-shadow: rgba($color-secundary, 0.35) 0px 5px 15px;
-  }
-}
-
 .Header {
   opacity: 1;
   min-width: 25rem;
   display: grid;
   grid-template-rows: auto 1fr auto;
   flex-direction: column;
-  font-family: "Roboto", sans-serif;
 
   &-photo {
     display: flex;
@@ -83,12 +37,12 @@
     flex-direction: column;
     align-items: center;
     & ul {
-      margin: 1.5rem auto;
       & li {
         text-decoration: none;
-        width: 15rem;
+        color: #fff;
+        background: #000000bb;
+        width: 100%;
         font-size: $font-middle;
-        margin: 2rem 0;
         font-weight: 100;
         cursor: pointer;
         padding: 1rem;
@@ -118,7 +72,7 @@
       width: 7rem;
       height: 7rem;
       border-radius: 5rem;
-
+      box-shadow: rgba($color-secundary, 0.35) 0px 5px 15px;
       margin-bottom: 2rem;
       cursor: pointer;
       &:hover {
@@ -128,7 +82,7 @@
   }
 }
 
-@media (max-width: 950px) {
+@media only screen and (max-width: 767px) {
   .Header {
     display: none;
     @include fadeIn;
@@ -152,4 +106,10 @@
     position: absolute;
     right: 35%;
   }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+}
+
+@media (min-width: 1024px) {
 }

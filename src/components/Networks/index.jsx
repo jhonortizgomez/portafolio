@@ -10,12 +10,12 @@ export const Networks = () => {
       <div className="Networks-container">
         <a href="https://bit.ly/linkedinjhonweb" target="_blank">
           <span className="Networks-container__linkedin icon">
-            <BsLinkedin fontSize={40} />
+            <BsLinkedin fontSize={35} />
           </span>
         </a>
         <a href="https://bit.ly/github-jhon-web" target="_blank">
           <span className="Networks-container__github icon">
-            <BsGithub fontSize={40} />
+            <BsGithub fontSize={35} />
           </span>
         </a>
       </div>

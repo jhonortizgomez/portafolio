@@ -3,9 +3,10 @@
 
 .HomeLeft {
   @include fadeIn;
-  padding: 10px 5px;
+  padding: 10px 10px;
   background: #0808089e;
   border-radius: 5%;
+
   height: auto;
 
   .wrapper-title {
@@ -92,6 +93,7 @@
   .HomeLeft {
     margin-left: 5%;
     width: 70%;
+    margin: 20px 0px 20px 0px;
   }
 
   .wrapper-title {
@@ -139,6 +141,7 @@
     .wrapper-description {
       .HomeLeft-position {
         font-size: 1.6rem;
+        margin-bottom: 20px;
       }
 
       .HomeLeft-description {
