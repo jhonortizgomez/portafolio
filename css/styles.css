@@ -8,73 +8,153 @@
     opacity: 1;
   }
 }
-.Nav {
-  border-radius: 1.5rem;
-  margin: 10px 10px;
-  height: 6rem;
+.Networks {
   display: flex;
-  box-shadow: rgba(255, 255, 255, 0.25) 0px 5px 15px;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  gap: 30px;
 }
-.Nav-left {
-  width: 100%;
-  height: 100%;
+.Networks .title-contact {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.Networks-container {
   display: flex;
   justify-content: start;
-  align-items: center;
-  padding-left: 4rem;
+  align-items: start;
+  height: 20%;
+  gap: 30px;
 }
-.Nav-left h1 {
-  font-weight: 800;
-  color: yellow;
-  animation: 1s fadeIn ease;
-}
-.Nav-right {
-  padding: 0.5rem;
-  display: flex;
-  justify-content: end;
-  align-items: center;
-}
-.Nav-right span {
-  animation: 1s fadeIn ease;
-  margin: 2rem;
-  font-size: 2rem;
+.Networks-container .icon {
+  font-size: 3rem;
   cursor: pointer;
 }
-.Nav-right span:hover {
-  transform: scale(1.2);
+.Networks-container__linkedin {
+  color: #0a66c2;
+  background: #000;
+  padding: 20px 10px 5px 10px;
+  border-radius: 50%;
+}
+.Networks-container__linkedin svg {
+  border-radius: 50%;
+}
+.Networks-container__github {
+  color: white;
+  background: #000;
+  padding: 20px 10px 5px 10px;
+  border-radius: 50%;
+}
+.Networks .wrapper-form-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Networks .wrapper-form-contact .form-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.Networks .wrapper-form-contact .form-contact .container-form-name-email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Networks .wrapper-form-contact .form-contact .container-form-name-email .label input {
+  border: 0.5px solid yellow;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.6509803922);
+  padding: 10px 10px;
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+}
+.Networks .wrapper-form-contact .form-contact .container-form-name-email .label input::-moz-placeholder {
+  color: #fff;
+}
+.Networks .wrapper-form-contact .form-contact .container-form-name-email .label input::placeholder {
+  color: #fff;
+}
+.Networks .wrapper-form-contact .form-contact .label textarea {
+  border: 0.5px solid yellow;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.6509803922);
+  padding: 10px 10px;
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+}
+.Networks .wrapper-form-contact .form-contact .label textarea::-moz-placeholder {
+  color: #fff;
+}
+.Networks .wrapper-form-contact .form-contact .label textarea::placeholder {
+  color: #fff;
+}
+.Networks .wrapper-form-contact .form-contact .button-submit-form {
+  background: yellow;
+  border-radius: 20px;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
 }
 
-@media only screen and (max-width: 767px) {
-  .Nav {
-    height: 3rem;
-    justify-content: center;
-  }
-  .Nav-left h1 {
-    font-size: 2rem;
-  }
-  .Nav-right span:nth-child(1) {
-    display: none;
-  }
-  .Nav-right span.menu-icon {
+@media (max-width: 767px) {
+  .Networks {
     display: block;
+    height: auto;
+  }
+  .Networks .title-contact {
+    margin-bottom: 30px;
+  }
+  .Networks-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .wrapper-form-contact {
+    width: 100%;
+  }
+  .container-form-name-email {
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 20px;
+  }
+  .label input {
+    width: 280px;
+    height: 40px;
+  }
+  .label textarea {
+    width: 280px;
+    height: 200px;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
-  .Nav-right span.menu-icon {
-    display: block;
+  .container-form-name-email {
+    gap: 20px;
   }
-  .Nav-left h1 {
-    font-size: 3rem;
+  .label input {
+    width: 160px;
+    height: 40px;
+  }
+  .label textarea {
+    width: 338px;
+    height: 100px;
   }
 }
 @media (min-width: 1024px) {
-  .Nav-left {
-    justify-content: center;
+  .container-form-name-email {
+    gap: 20px;
   }
-  .Nav-right span.menu-icon {
-    display: none;
+  .label input {
+    width: 200px;
+    height: 40px;
   }
-  .Nav-left h1 {
-    font-size: 3rem;
+  .label textarea {
+    width: 430px;
+    height: 100px;
   }
 }/*# sourceMappingURL=styles.css.map */

@@ -8,7 +8,7 @@ import "../InformationHome/style.scss";
 export const InfoContact = () => {
   const { darkMode } = useContext(appContext);
   return (
-    <section className={`Information ${darkMode ? "darkMode" : "lightMode"}`}>
+    <section className="Information">
       <ContactDescription />
       <Networks />
     </section>

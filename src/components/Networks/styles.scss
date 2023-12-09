@@ -18,7 +18,7 @@
     display: flex;
     justify-content: start;
     align-items: start;
-    height: 30%;
+    height: 20%;
     gap: 30px;
     & .icon {
       font-size: 3rem;
@@ -57,7 +57,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 20px;
 
         .label input {
           border: 0.5px solid yellow;
@@ -90,6 +89,8 @@
         color: #000;
         border: none;
         padding: 10px 20px;
+        font-family: "Raleway", sans-serif;
+        font-weight: 800;
       }
     }
   }
@@ -114,6 +115,8 @@
 
   .container-form-name-email {
     flex-direction: column;
+    gap: 40px;
+    margin-bottom: 20px;
   }
   .label input {
     width: 280px;
@@ -122,11 +125,14 @@
 
   .label textarea {
     width: 280px;
-    height: 100px;
+    height: 200px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
+  .container-form-name-email {
+    gap: 20px;
+  }
   .label input {
     width: 160px;
     height: 40px;
@@ -139,6 +145,9 @@
 }
 
 @media (min-width: 1024px) {
+  .container-form-name-email {
+    gap: 20px;
+  }
   .label input {
     width: 200px;
     height: 40px;
