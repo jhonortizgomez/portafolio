@@ -4,7 +4,6 @@
 .Header {
   opacity: 1;
   min-width: 25rem;
-  display: grid;
   grid-template-rows: auto 1fr auto;
   flex-direction: column;
 
@@ -114,6 +113,12 @@
 @media (min-width: 768px) and (max-width: 1023px) {
   .Header {
     display: none;
+  }
+  .active {
+    justify-content: space-evenly;
+    display: flex;
+    position: absolute;
+    right: 35%;
   }
 }
 
