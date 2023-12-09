@@ -85,6 +85,9 @@
 @media only screen and (max-width: 767px) {
   .Header {
     display: none;
+    border: 1px solid #fff;
+    align-self: center;
+    align-items: center;
     @include fadeIn;
     &-photo {
       &__img {
@@ -109,6 +112,9 @@
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
+  .Header {
+    display: none;
+  }
 }
 
 @media (min-width: 1024px) {

@@ -10,7 +10,7 @@
 }
 .HomeLeft {
   animation: 1s fadeIn ease;
-  padding: 10px 10px;
+  padding: 20px 20px;
   background: rgba(8, 8, 8, 0.6196078431);
   border-radius: 5%;
   height: auto;
@@ -33,6 +33,7 @@
 }
 .HomeLeft .wrapper-description .HomeLeft-position {
   font-weight: 800;
+  margin-bottom: 20px;
   color: yellow;
   padding: 0 1rem;
   text-align: center;
@@ -79,6 +80,7 @@
   .HomeLeft .wrapper-description .HomeLeft-button {
     padding: 1rem;
     font-size: 1.4rem;
+    margin-bottom: 10px;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -100,7 +102,7 @@
   .wrapper-description .HomeLeft-description {
     padding: 0px 5px 0px 5px;
     font-size: 1.2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     letter-spacing: 1px;
   }
   .wrapper-description .HomeLeft-button {
@@ -121,7 +123,6 @@
   }
   .HomeLeft .wrapper-description .HomeLeft-position {
     font-size: 1.6rem;
-    margin-bottom: 20px;
   }
   .HomeLeft .wrapper-description .HomeLeft-description {
     font-size: 1.3rem;
