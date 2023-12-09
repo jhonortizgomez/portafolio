@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { appContext } from "@context/appContext";
 
-import { MdDarkMode } from "react-icons//md";
 import logo from "@images/logo.png";
 import logoBlack from "@images/logo-black.png";
 import "./style.scss";
@@ -39,15 +38,10 @@ export const Header = () => {
             <li>Contacto</li>
           </Link>
         </ul>
-        <div className={`Header-list__button`}>
-          <span onClick={() => toggleDarkMode()}>
-            <MdDarkMode />
-          </span>
-        </div>
       </section>
       <section className="Header-footer">
         <Link to="/" onClick={() => toggleHeader()}>
-          {darkMode ? <img src={logo} /> : <img src={logoBlack} />}
+          <img src={logoBlack} />
         </Link>
       </section>
     </header>

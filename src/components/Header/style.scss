@@ -17,7 +17,7 @@
       width: 15rem;
       height: 15rem;
       border-radius: 50%;
-      margin: 1.5rem auto;
+      margin: 3rem 1.5rem 1.5rem 1.5rem;
     }
     &__title {
       text-align: center;
@@ -27,6 +27,7 @@
       & h2 {
         font-size: $font-middle;
         font-weight: 100;
+        margin-bottom: 30px;
       }
     }
   }
@@ -36,11 +37,18 @@
     flex-direction: column;
     align-items: center;
     & ul {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      margin-bottom: 20px;
+
       & li {
         text-decoration: none;
-        color: #fff;
+        color: yellow;
         background: #000000bb;
-        width: 100%;
+        width: 200px;
+        border: 1px solid white;
+        border-radius: 20px;
         font-size: $font-middle;
         font-weight: 100;
         cursor: pointer;
@@ -67,12 +75,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
     & img {
-      width: 7rem;
-      height: 7rem;
-      border-radius: 5rem;
-      box-shadow: rgba($color-secundary, 0.35) 0px 5px 15px;
+      width: 8rem;
+      height: 4.5rem;
       margin-bottom: 2rem;
+      background: yellow;
+      padding: 2px 1px;
+      border: 1px solid white;
+      border-radius: 20px;
       cursor: pointer;
       &:hover {
         transform: scale(1.1);
@@ -84,7 +95,6 @@
 @media only screen and (max-width: 767px) {
   .Header {
     display: none;
-    border: 1px solid #fff;
     align-self: center;
     align-items: center;
     @include fadeIn;
@@ -94,10 +104,13 @@
         height: 11rem;
       }
     }
-    &-list ul li {
-      font-size: 1.5rem;
-      margin: 0.5rem 0;
+
+    &-list ul {
+      &-list ul li {
+        font-size: 1.5rem;
+      }
     }
+
     &-list__button {
       display: flex;
     }
@@ -106,13 +119,19 @@
     justify-content: space-evenly;
     display: flex;
     position: absolute;
-    right: 35%;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .Header {
     display: none;
+    &-list ul {
+      gap: 22px;
+    }
   }
   .active {
     justify-content: space-evenly;
