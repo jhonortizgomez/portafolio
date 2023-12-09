@@ -32,10 +32,10 @@ export const Header = () => {
           <Link to="/" onClick={() => toggleHeader()}>
             <li>Inicio</li>
           </Link>
-          <Link to="/portafolio/projects" onClick={() => toggleHeader()}>
+          <Link to="/projects" onClick={() => toggleHeader()}>
             <li>Proyectos</li>
           </Link>
-          <Link to="/portafolio/contact" onClick={() => toggleHeader()}>
+          <Link to="/contact" onClick={() => toggleHeader()}>
             <li>Contacto</li>
           </Link>
         </ul>

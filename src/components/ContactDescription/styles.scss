@@ -3,22 +3,40 @@
 
 .ContactDescription {
   display: flex;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
+  justify-content: start;
+  text-align: center;
   width: 40%;
   & h1 {
-    font-size: 4rem;
     width: 100%;
     text-align: center;
     @include fadeIn;
   }
 }
-@media (max-width: 550px) {
+
+@media (max-width: 767px) {
   .ContactDescription {
     align-items: flex-end;
     & h1 {
-      margin-left: 5rem;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .ContactDescription {
+    align-items: center;
+    & h1 {
+      font-size: 3rem;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .ContactDescription {
+    align-items: center;
+    & h1 {
+      font-size: 3rem;
     }
   }
 }

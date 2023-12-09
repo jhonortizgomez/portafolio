@@ -3,48 +3,149 @@
 
 .Networks {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  flex-direction: column;
+  height: auto;
+  gap: 30px;
+
+  .title-contact {
+    font-size: 1.5rem;
+    font-weight: 800;
+  }
+
   &-container {
-    background-color: $color-primary;
-    padding: 2rem;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 100%;
+    justify-content: start;
+    align-items: start;
+    height: 30%;
+    gap: 30px;
     & .icon {
       font-size: 3rem;
       cursor: pointer;
     }
-    &__whatsapp {
-      color: #57fa79;
-    }
+
     &__linkedin {
       color: #0a66c2;
+      background: #000;
+      padding: 20px 10px 5px 10px;
+      border-radius: 50%;
+      svg {
+        border-radius: 50%;
+      }
     }
     &__github {
       color: white;
+      background: #000;
+      padding: 20px 10px 5px 10px;
+      border-radius: 50%;
     }
-    &__twitter {
-      color: #1d9bf0;
-    }
-    &__instagram {
-      color: #fdad4c;
+  }
+
+  .wrapper-form-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .form-contact {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      .container-form-name-email {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        .label input {
+          border: 0.5px solid yellow;
+          border-radius: 10px;
+          background: #000000a6;
+          padding: 10px 10px;
+          font-family: "Raleway", sans-serif;
+          color: #fff;
+        }
+        .label input::placeholder {
+          color: #fff;
+        }
+      }
+
+      .label textarea {
+        border: 0.5px solid yellow;
+        border-radius: 10px;
+        background: #000000a6;
+        padding: 10px 10px;
+        font-family: "Raleway", sans-serif;
+        color: #fff;
+      }
+      .label textarea::placeholder {
+        color: #fff;
+      }
+
+      .button-submit-form {
+        background: yellow;
+        border-radius: 20px;
+        color: #000;
+        border: none;
+        padding: 10px 20px;
+      }
     }
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 767px) {
   .Networks {
     display: block;
-    height: 40%;
+    height: auto;
+    .title-contact {
+      margin-bottom: 30px;
+    }
   }
   .Networks-container {
-    background-color: $color-primary;
-    padding: 2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    height: 100%;
+  }
+  .wrapper-form-contact {
+    width: 100%;
+  }
+
+  .container-form-name-email {
+    flex-direction: column;
+  }
+  .label input {
+    width: 280px;
+    height: 40px;
+  }
+
+  .label textarea {
+    width: 280px;
+    height: 100px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .label input {
+    width: 160px;
+    height: 40px;
+  }
+
+  .label textarea {
+    width: 338px;
+    height: 100px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .label input {
+    width: 200px;
+    height: 40px;
+  }
+
+  .label textarea {
+    width: 430px;
+    height: 100px;
   }
 }

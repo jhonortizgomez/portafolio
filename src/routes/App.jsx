@@ -16,8 +16,8 @@ export const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
 
-          <Route path="/portafolio/projects" element={<Projects />} />
-          <Route path="/portafolio/contact" element={<Contact />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </BrowserRouter>
     </appContext.Provider>
