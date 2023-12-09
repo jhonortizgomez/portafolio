@@ -1,145 +1,40 @@
-@keyframes fadeIn {
-  from {
-    filter: blur(5px);
-    opacity: 0;
-  }
-  to {
-    filter: 0;
-    opacity: 1;
-  }
+.modeLight {
+  background-image: url("https://images.pexels.com/photos/19670/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.HomeLeft {
-  animation: 1s fadeIn ease;
-  padding: 20px 20px;
-  background: rgba(8, 8, 8, 0.6196078431);
-  border-radius: 5%;
-  height: auto;
+
+.modeDark {
+  background-image: url("https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
 }
-.HomeLeft .wrapper-title .HomeLeft-greeting {
-  font-weight: 100;
-  margin-left: 10px;
-}
-.HomeLeft .wrapper-title .HomeLeft-name {
-  font-weight: 100;
-  margin-bottom: 1rem;
-  margin-left: 10px;
-}
-.HomeLeft .wrapper-description {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: left;
-  align-items: center;
-}
-.HomeLeft .wrapper-description .HomeLeft-position {
-  font-weight: 800;
-  margin-bottom: 20px;
-  color: yellow;
-  padding: 0 1rem;
-  text-align: center;
-}
-.HomeLeft .wrapper-description .HomeLeft-description {
-  font-weight: 100;
-  max-width: 550px;
-  line-height: 1.5;
-}
-.HomeLeft .wrapper-description .HomeLeft-button {
-  padding: 1rem 1.5rem;
-  border-radius: 1rem;
-  border: 0;
-  background-color: yellow;
-  box-shadow: rgba(255, 255, 0, 0.35) 0px 5px 15px;
-  color: black;
-  font-weight: 900;
-  cursor: pointer;
-}
-.HomeLeft .wrapper-description .HomeLeft-button:hover {
-  transform: scale(1.1);
+
+.Main {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr 85%;
 }
 
 @media only screen and (max-width: 767px) {
-  .HomeLeft {
+  .Main {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    padding: 10px;
-    margin-bottom: 30px;
-  }
-  .HomeLeft .wrapper-title .HomeLeft-greeting {
-    font-size: 2.4rem;
-  }
-  .HomeLeft .wrapper-title .HomeLeft-name {
-    font-size: 2.2rem;
-  }
-  .HomeLeft .wrapper-description .HomeLeft-position {
-    font-size: 1.9rem;
-    margin-bottom: 10px;
-  }
-  .HomeLeft .wrapper-description .HomeLeft-description {
-    font-size: 1.4rem;
-    margin-bottom: 2rem;
-  }
-  .HomeLeft .wrapper-description .HomeLeft-button {
-    padding: 1rem;
-    font-size: 1.4rem;
-    margin-bottom: 10px;
+    height: 148vh;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
-  .HomeLeft {
-    margin-left: 5%;
-    width: 70%;
-    margin: 20px 0px 20px 0px;
-  }
-  .wrapper-title .HomeLeft-greeting {
-    font-size: 2rem;
-  }
-  .wrapper-title .HomeLeft-name {
-    font-size: 1.8rem;
-  }
-  .wrapper-description .HomeLeft-position {
-    font-size: 1.6rem;
-    margin-bottom: 15px;
-  }
-  .wrapper-description .HomeLeft-description {
-    padding: 0px 5px 0px 5px;
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    letter-spacing: 1px;
-  }
-  .wrapper-description .HomeLeft-button {
-    padding: 0.5rem 1rem;
-    font-size: 1.4rem;
-  }
-}
-@media (min-width: 1024px) {
-  .HomeLeft {
-    margin-left: 5%;
-    width: 60%;
-  }
-  .HomeLeft .wrapper-title .HomeLeft-greeting {
-    font-size: 3rem;
-  }
-  .HomeLeft .wrapper-title .HomeLeft-name {
-    font-size: 2rem;
-  }
-  .HomeLeft .wrapper-description .HomeLeft-position {
-    font-size: 1.6rem;
-  }
-  .HomeLeft .wrapper-description .HomeLeft-description {
-    font-size: 1.3rem;
-    padding: 0px 5px 0px 5px;
-    margin-bottom: 1rem;
-    letter-spacing: 1px;
-  }
-  .HomeLeft .wrapper-description .HomeLeft-button {
-    padding: 0.5rem 1.5rem;
-    font-size: 1.5rem;
+  .Main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
   }
 }
 @media (min-width: 1036px) {
-  .HomeLeft {
-    margin-left: 5%;
-  }
-  .HomeLeft .wrapper-description .HomeLeft-description {
-    margin-bottom: 4rem;
+  .Main {
+    height: 100vh;
   }
 }/*# sourceMappingURL=styles.css.map */
